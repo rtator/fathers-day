@@ -1,0 +1,85 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="^m@0Q2cS1VE$tj:4-5Uy">mySprite</variable><variable id="8KzdJWDr)pju|[0XZW@3">mySprite2</variable><variable id="r0/MrV,ZVR!Kn1[I.=no">mySprite3</variable><variable id="PAm4hvfxk,c%k,d,{|Ks">mySprite4</variable><variable id="!Q*GH$wze3Y$P,1/{v9J">mySprite5</variable><variable type="KIND_SpriteKind" id="*qRHgV*Sd~h![NGKWVVR">Player</variable><variable type="KIND_SpriteKind" id="Jt?WPEMC]/^nS{GU$t@A">Projectile</variable><variable type="KIND_SpriteKind" id="FP-[FJ)XHPUu4jCovjZA">Food</variable><variable type="KIND_SpriteKind" id="}~@)[Lv$!_3KbjZFEIRc">Enemy</variable><variable type="KIND_SpriteKind" id="B%?Lnio5bVAaRDYjt}]9">yuki</variable><variable type="KIND_SpriteKind" id="bY32MI$cno+|#QIoT|6j">kosuke</variable><variable type="KIND_SpriteKind" id="vhw-Gj|59.EcU(hb.r6x">mama</variable><variable type="KIND_SpriteKind" id="8HWm%A|*V+F^.u?*)[Gj">yoko</variable><variable type="KIND_SpriteKind" id="[V;?|JA^CHa!?XG[p+9G">hiro</variable></variables><block type="spritesoverlap" x="400" y="0"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">yuki</field></shadow></value><statement name="HANDLER"><block type="playMelody"><value name="melody"><shadow type="melody_editor"><field name="melody">"A C E F D G E F "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">120</field></shadow></value><next><block type="startEffectOnSprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.smiles</field><value name="sprite"><block type="variables_get"><field name="VAR" id="!Q*GH$wze3Y$P,1/{v9J">mySprite5</field></block></value><value name="duration"><shadow type="timePicker"><field name="ms">5000</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="!Q*GH$wze3Y$P,1/{v9J">mySprite5</field></block></value><value name="text"><shadow type="text"><field name="TEXT">happy father's day! I’m happy when I get to draw with you. I love you!</field></shadow></value><value name="millis"><shadow type="timePicker"><field name="ms">500</field></shadow></value></block></next></block></next></block></statement></block><block type="spritesoverlap" x="0" y="140"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">kosuke</field></shadow></value><statement name="HANDLER"><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="PAm4hvfxk,c%k,d,{|Ks">mySprite4</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Happy Father's Day! Thank you for reading comics with me</field></shadow></value></block></statement></block><block type="spritesoverlap" x="600" y="240"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">yoko</field></shadow></value><statement name="HANDLER"><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="r0/MrV,ZVR!Kn1[I.=no">mySprite3</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Thank you for all the hard work you do for us every day. I admire your dedication and tenacity in your work and your hobbies. I am excited to continue on this adventure in California and at Pixar with you. Love you! Happy Father’s Day!</field></shadow></value></block></statement></block><block type="pxt-on-start" x="330" y="450"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">9</field></shadow></value><next><block type="variables_set"><field name="VAR" id="8KzdJWDr)pju|[0XZW@3">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f f f f 
+f 4 4 4 4 4 f 
+4 4 f 4 f 4 4 
+4 4 4 4 4 4 4 
+4 f 4 4 4 f 4 
+4 4 f f f 4 4 
+4 4 4 4 4 4 4 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">hiro</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="8KzdJWDr)pju|[0XZW@3">mySprite2</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">15</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">19</field></shadow></value><next><block type="variables_set"><field name="VAR" id="!Q*GH$wze3Y$P,1/{v9J">mySprite5</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . f f f f f f f f f f . . 
+. . f 4 4 4 4 4 4 4 4 f . . 
+. . f 4 f f 4 4 f f 4 f . . 
+. . f 4 f f 4 4 f f 4 f . . 
+f . f 4 4 4 4 4 4 4 4 f . f 
+f f f 4 f 4 4 4 4 f 4 f f f 
+. . . 4 4 f f f f 4 4 . . . 
+. . . 4 4 4 4 4 4 4 4 . . . 
+. . . 3 3 3 3 3 3 3 3 . . . 
+. . . 3 3 3 3 3 3 3 3 . . . 
+. . 3 3 3 3 3 3 3 3 3 3 . . 
+. 3 3 3 3 3 3 3 3 3 3 3 3 . 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">yuki</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="!Q*GH$wze3Y$P,1/{v9J">mySprite5</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">116</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">25</field></shadow></value><next><block type="variables_set"><field name="VAR" id="PAm4hvfxk,c%k,d,{|Ks">mySprite4</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f f f 
+f 4 4 4 4 f 
+4 f 4 4 f 4 
+4 4 4 4 4 4 
+f 4 4 4 4 f 
+4 f f f f 4 
+4 4 4 4 4 4 
+f f f f f f 
+f f f f f f 
+f f f f f f 
+f f f f f f 
+f f f f f f 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">kosuke</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="PAm4hvfxk,c%k,d,{|Ks">mySprite4</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">45</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">100</field></shadow></value><next><block type="variables_set"><field name="VAR" id="r0/MrV,ZVR!Kn1[I.=no">mySprite3</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . f f f f f f f f f f . . 
+. . f 4 4 4 4 4 4 4 4 f . . 
+. . f 4 f f 4 4 f f 4 f . . 
+. . f 4 f f 4 4 f f 4 f . . 
+. . f 4 4 4 4 4 4 4 4 f . . 
+. . f 4 f 4 4 4 4 f 4 f . . 
+f . f 4 4 f f f f 4 4 f . f 
+f f f 4 4 4 4 4 4 4 4 f f f 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+. . . 8 8 8 8 8 8 8 8 . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">yoko</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="r0/MrV,ZVR!Kn1[I.=no">mySprite3</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">100</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">80</field></shadow></value><next><block type="variables_set"><field name="VAR" id="^m@0Q2cS1VE$tj:4-5Uy">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f f f f f f 
+f f f f f f f f f 
+f f 4 4 4 4 4 f f 
+4 4 f f 4 f f 4 4 
+4 4 f f 4 f f 4 4 
+4 4 4 4 4 4 4 4 4 
+4 f 4 4 4 4 4 f 4 
+4 4 f f f f f 4 4 
+4 4 4 4 4 4 4 4 4 
+8 8 8 8 8 8 8 8 8 
+8 d 8 8 d 8 8 8 8 
+8 8 8 8 8 8 8 d 8 
+8 8 8 8 8 8 8 8 8 
+d 8 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 8 
+8 8 8 d 8 8 8 d 8 
+8 8 8 8 8 8 8 8 8 
+d 8 8 8 8 8 8 8 8 
+8 8 8 d 8 8 d 8 8 
+8 8 8 8 8 8 8 8 8 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="^m@0Q2cS1VE$tj:4-5Uy">mySprite</field></block></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get"><field name="VAR" id="^m@0Q2cS1VE$tj:4-5Uy">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" x="840" y="480"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">hiro</field></shadow></value><statement name="HANDLER"><block type="startEffectOnSprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get"><field name="VAR" id="8KzdJWDr)pju|[0XZW@3">mySprite2</field></block></value><value name="duration"><shadow type="timePicker"><field name="ms">2000</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="8KzdJWDr)pju|[0XZW@3">mySprite2</field></block></value><value name="text"><shadow type="text"><field name="TEXT">happy fathers day! thank you for always helping me code (even though I sometimes get mad). have fun!  </field></shadow></value></block></next></block></statement></block></xml>
